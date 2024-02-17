@@ -21,16 +21,17 @@ function preload() {
     this.load.image('logo', 'assets/logo-inteli_azul.png');
     //carregar o peixe
     this.load.image('peixe', 'assets/peixes/peixe_amarelo.png');
-    //carregando novo elemento..uma concha :)
+    //carregando novo elemento -> uma concha :)
     this.load.image('concha', 'assets/concha.png');
 }
 
 function create() {     
+    //adiciona o mar
     this.add.image(400, 300, 'mar');
     //adicionando a logo na tela
     this.add.image(400, 525, 'logo').setScale(0.5);
     //elemento adicional, conchinha :)
-    this.add.image(600, 600, 'concha');
+    this.add.image(600, 500, 'concha');
     //adicionando o peixe na tela, guardando em uma variavel
     peixinho = this.add.image(400, 300, 'peixe');
     //transformando a variavel
